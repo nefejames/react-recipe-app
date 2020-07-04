@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #291e38;
+  font-family: "Proxima Nova";
+  background: rgb(238, 236, 236);
+  line-height: 1.5;
+}
+
+header {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  background: #291e38;
+}
+
+header,
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+nav {
+  display: flex;
+  width: 20%;
+  margin-top: 0.7rem;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav .fa {
+  font-size: 1.7rem;
+}
+
+form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  background: rgb(204, 204, 204);
+  margin-right: 1rem;
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  background: #fc5544;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.meal {
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px #291e3856;
+}
+
+.recipe-box {
+  width: 300px;
+  margin: 0 auto 3rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.recipe {
+  padding: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  list-style-position: inside;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 32px;
+  }
+
+  .recipe-box {
+    flex-basis: 300px;
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header,
+  main {
+    padding: 1rem 4rem;
+  }
+
+  nav {
+    width: 17%;
+  }
+
+  main {
+    padding-top: 2.5rem;
+  }
+
+  form {
+    width: 75%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav {
+    width: 12%;
+  }
+  form {
+    width: 60%;
+  }
+}
